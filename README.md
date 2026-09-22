@@ -123,7 +123,7 @@ deepfake-audio-detection/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/deepfake-audio-detection.git
+git clone https://github.com/Rohith-kumar-123/deepfake-audio-detection.git
 
 cd deepfake-audio-detection
 ```
@@ -416,7 +416,6 @@ This project is intended for academic and educational purposes.
 # 👨‍💻 Authors
 
 **R. Rohith Kumar**  
-**M. Vishnu Vardhana Raju**
 
 Vellore Institute of Technology
 
