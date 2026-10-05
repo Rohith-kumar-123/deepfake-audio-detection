@@ -39,7 +39,7 @@ device = torch.device(
 
 model = DeepfakeHybridModel().to(device)
 
-MODEL_PATH = "weights/model_refined_e5.pth"
+MODEL_PATH = "weights/best_model.pth"
 
 if not os.path.exists(MODEL_PATH):
     st.error(
