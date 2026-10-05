@@ -5,6 +5,7 @@ import librosa
 import matplotlib.pyplot as plt
 import streamlit as st
 import torch
+import numpy as np
 
 from src.model import DeepfakeHybridModel
 from src.preprocess import extract_hybrid_features
