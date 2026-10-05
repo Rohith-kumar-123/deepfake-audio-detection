@@ -170,7 +170,7 @@ if uploaded_file is not None:
 
         mel_db = librosa.power_to_db(
             mel_spec,
-            ref=max
+            ref=np.max
         )
 
         st.subheader(
