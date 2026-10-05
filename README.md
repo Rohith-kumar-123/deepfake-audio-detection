@@ -355,15 +355,36 @@ The application provides an interface where users can:
 
 ---
 
+
+
 # 📈 Results
 
-The accompanying project report reports **99.30% accuracy on the stated validation dataset**.
+The rebuilt training pipeline was evaluated on a held-out validation split created from the locally available ASVspoof 5 training samples.
 
-The project also describes testing on in-the-wild audio samples. The report notes that factors such as **background music and audio compression** can affect predictions.
+### Validation Results
 
-> Results are reported from the evaluation described in the accompanying project report.
+| Metric | Score |
+|--------|------:|
+| Validation Accuracy | **98.95%** |
+| Precision | **98.95%** |
+| Recall | **98.95%** |
+| F1 Score | **98.95%** |
+| Evaluated Samples | **1,521** |
 
----
+### Confusion Matrix
+
+![Confusion Matrix](docs/confusion_matrix.png)
+
+The confusion matrix shows:
+
+- **True Negatives:** 753
+- **False Positives:** 8
+- **False Negatives:** 8
+- **True Positives:** 752
+
+The validation split was created using an 80/20 stratified split after matching the ASVspoof 5 protocol entries with the locally available audio files and balancing the two classes.
+
+> These results are from the rebuilt training and evaluation pipeline in this repository. They should not be interpreted as a benchmark result for the complete ASVspoof 5 dataset.
 
 # 🔮 Future Improvements
 
